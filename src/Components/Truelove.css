@@ -1,0 +1,112 @@
+/* Truelove.css */
+.truebody{
+  background-color: navy;
+  padding: 30px;
+}
+.rectangle-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px; /* Add gap between quadrants */
+  max-width: 1140px;
+  max-height:700px;
+  width: 100%;
+  margin: auto;
+  padding: 10px; /* Adjust padding */
+}
+
+.quadrant {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #0F52BA;
+  border-radius: 20px;
+  overflow: hidden; /* Add overflow to hide any overflowing content */
+}
+
+#quadrant1 {
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
+}
+
+#quadrant2 {
+  grid-row: 1 / span 1;
+  grid-column: 2 / span 1;
+}
+
+#quadrant3 {
+  grid-row: 2 / span 1;
+  grid-column: 1 / span 1;
+}
+
+#quadrant4 {
+  grid-row: 2 / span 1;
+  grid-column: 2 / span 1;
+  .problem-icon img {
+    max-width: 20%;
+    max-height: 20%;
+  }
+}
+
+/* Rest of your existing CSS... */
+
+.truelove {
+  width: 100%;
+  padding: 6rem 0;
+  background-color: #1f1f1f;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.problem-title{
+  color:white;
+}
+
+.truelove-container {
+  max-width: 1140px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.truelove-heading {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color:aliceblue;
+}
+ 
+.white-list {
+  color: white;
+  list-style: disc; /* You can use 'circle', 'square', etc. as well */
+  margin-left: 2rem; /* Adjust as needed */
+}
+
+.truelove-text {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color:azure;
+}
+
+.truelove-image {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .truelove-heading {
+      font-size: 2.5rem;
+  }
+
+  .truelove-text {
+      font-size: 1rem;
+  }
+}

@@ -2,7 +2,8 @@ import React, { useCallback } from "react";
 import Particles from "react-particles";
 import { loadSlim } from "tsparticles-slim";
 import "./ParticleComponent.css"; // Import the CSS file
-import Tree from "../assets/10861-removebg-preview.png"
+import Img from "../assets/54gurggpqmf0815vlb03jplnu2.png"
+import 'animate.css/animate.min.css';
 
 const ParticleComponent = () => {
     const particlesInit = useCallback(async (engine) => {
@@ -93,31 +94,31 @@ const ParticleComponent = () => {
                 className="particles"
             />
             
-                <img
-                    className="image"
-                    src={Tree}
-                    alt="MyED Logo"
-                />
-                <div className="firstText">
-                <h1 className="animated fadeInUp" data-animate="fadeInUp">
-                    New Generation Online Training and Consultancy
+           
+                <div className="firstText ">
+                <div className="animate__animated animate__fadeInUp">
+                <div className="image-container">
+        <img className="image animate__fadeInUp" src={Img} alt="MyED Logo" />
+      </div>
+      </div>
+      
+                <h1 className="animate__animated animate__fadeInUp" data-animate="fadeInUp">
+            New Generation Online Training and Consultancy
                 </h1>
-                <h3 className="listing-text">
-                    MYED TOKEN IS LISTING. TODAY 20 MARCH 14:00 UTC
-                </h3>
-                <ul className="btns animated fadeInUp">
+                
+                <ul className="btns animate__animated animate__fadeInUp">
                 <li className="btn-item">
-                    <a className="btn" href="http://myed.pro/">GO TO MYED PLATFORM</a>
+                    <a className="btn" href="http://myed.pro/">GO TO Consultron PLATFORM</a>
                 </li>
                 <li className="btn-item">
-                    <a className="btn" href="https://play.google.com/store/apps/details?id=com.myed.education">MYED ANDROID APP</a>
+                    <a className="btn" href="https://play.google.com/store/apps/details?id=com.myed.education">Consultron ANDROID APP</a>
                 </li>
                 <li className="btn-item">
                     <a className="btn" href="https://t.me/MyedOffical">TELEGRAM</a>
                 </li>
             </ul>
             <h3 className="white-papers">White Papers</h3>
-            <ul className="btns animated fadeInUp">
+            <ul className="btns animate__animated animate__fadeInUp">
                 <li><a className="btn btn-alt" href="https://myed-1.gitbook.io/myed-whitepaper-en-1/">WhitePaper English</a></li>
                 <li><a className="btn btn-alt" href="https://myed-1.gitbook.io/myed-whitepaper-chinese/">WhitePaper 中国人</a></li>
                 <li><a className="btn btn-alt" href="https://myed-1.gitbook.io/myed-whitepaper-tuerkce/">WhitePaper Turkish</a></li>

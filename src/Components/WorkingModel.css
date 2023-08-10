@@ -1,0 +1,119 @@
+
+.about {
+    width: 100%;
+    margin: 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow-y: hidden; 
+    overflow-x: hidden;  
+    height: 100%;
+    
+
+  }
+  
+  .about-heading {
+    font-size: 5.4rem;
+    font-family: monospace;
+    color: white;
+    display: flex;
+  }
+  
+  .about .left {
+    
+    margin: auto;
+    padding: 1rem;
+    max-width: 350px;
+  }
+  .list{
+    color:white;
+  }
+  
+  .about .left p {
+    text-align: left;
+    margin: 1.2rem 0;
+  }
+  
+  .about .right {
+    max-width: 700px;
+  }
+  
+  .right .img-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    position: relative;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .right .img {
+    max-width: 90%; /* Ensure the image doesn't exceed its container */
+    border: 1px solid #333;
+    margin-left: 60px;
+  }
+  
+  .right .top {
+    grid-column: 1 / span 8;
+    grid-row: 1;
+    padding-top: 20%;
+    z-index: 6;
+  }
+  
+  .right .bottom {
+    grid-column: 4 / -1;
+    grid-row: 1;
+    z-index: 5;
+  }
+  
+  /* Adjust the tech stack list item */
+  .tech-stack-list-item {
+    padding-left: 20px;
+    color: azure;
+    margin: 8px 0;
+    white-space: nowrap; /* Prevent tech stack list items from wrapping */
+    overflow: hidden; /* Hide any overflowing content */
+  }
+  
+  /* Other styles... */
+    
+  .section-head {
+    margin: 0;
+    padding: 50px 0;
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* Section title */
+  .section-title {
+    font-size: 34.5px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+  }
+  
+  .section-title span {
+    font-size: 120px;
+    font-weight: 600;
+    opacity: 0.06;
+    position: absolute;
+    top: 22.9375px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 1;
+  }
+  .animated-fadeInUp {
+    color: white; /* Set text color to white */
+    font-size: 7rem; /* Set font size to 1.5rem */
+}
+
+  
+  @media screen and (max-width: 768px) {
+    .right {
+      float: right;
+      margin-left: 20px;
+    }
+  }
+  

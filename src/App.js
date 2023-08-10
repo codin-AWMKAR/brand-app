@@ -1,16 +1,36 @@
+import React from "react";
+import "./index.css";
+import Home from "./Routes/Home";
+import Function from "./Routes/Function";
+import Operations from "./Routes/Operations";
+import Contact from "./Routes/Contact";
+import About from "./Routes/About";
 
 
-import './App.css';
-import ParticleComponent from "./Components/ParticleComponent";
-import Platform from './Components/Platform';
 
 
 function App() {
   return (
-    <div className="App">
-     {/* <ParticleComponent/> */}
-     <Platform/>
-    </div>
+    <>
+   
+      <div className="container">
+        <section id="home">
+          <Home/>
+        </section>
+        <section id="about">
+         <About/>
+        </section>
+        <section id="functions">
+          <Function/>
+        </section>
+        <section id="operations">
+          <Operations/>
+        </section>
+        <section id="contact">
+          <Contact/>
+        </section>
+      </div>
+    </>
   );
 }
 
